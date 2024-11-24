@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #1E1E1E;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.primary-header {
+    color: #BB86FC;
+    text-align: center;
+}
+
+.secondary-header {
+    color: #03DAC6;
+    margin-top: 30px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #3700B3;
+    border-radius: 5px;
+    background-color: #2A2A2A;
+    color: #FFFFFF;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.primary-button {
+    background-color: #BB86FC;
+    color: #000000;
+}
+
+.secondary-button {
+    background-color: #03DAC6;
+    color: #000000;
+}
+
+.error-button {
+    background-color: #CF6679;
+    color: #FFFFFF;
+}
+
+a {
+    color: #03DAC6;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.post-item {
+    background-color: #2A2A2A;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.post-actions {
+    margin-top: 10px;
+}
+

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Post</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-900 text-white min-h-screen flex items-center justify-center">
+    <div class="bg-gray-800 p-8 rounded-lg shadow-lg w-3/4 lg:w-1/2">
+        <h1 class="text-3xl font-bold text-purple-400 mb-4 text-center">Create Your Next Masterpiece</h1>
+        <p class="text-gray-400 mb-6 text-center">
+            Share your ideas, projects, or accomplishments. Make sure your post inspires others!
+        </p>
+        <form action="/create" method="POST" class="space-y-6">
+            <!-- Title Input -->
+            <div>
+                <label for="title" class="block font-semibold mb-2 text-lg text-teal-400">Title</label>
+                <input type="text" id="title" name="title" 
+                    class="w-full px-4 py-3 bg-gray-700 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-400"
+                    placeholder="Enter an engaging title for your post" required>
+                <small class="block mt-1 text-sm text-gray-500">
+                    Example: "How I Built an AI Model That Predicts User Engagement"
+                </small>
+            </div>
+
+            <!-- Content Input -->
+            <div>
+                <label for="content" class="block font-semibold mb-2 text-lg text-teal-400">Content</label>
+                <textarea id="content" name="content"
+                    class="w-full px-4 py-3 bg-gray-700 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-400"
+                    rows="5" placeholder="Write a detailed description of your work, project, or thought leadership" required></textarea>
+                <small class="block mt-1 text-sm text-gray-500">
+                    Example: "This post describes how I implemented NLP techniques to optimize text sentiment analysis."
+                </small>
+            </div>
+
+            <!-- Tags Input -->
+            <div>
+                <label for="tags" class="block font-semibold mb-2 text-lg text-teal-400">Tags (Optional)</label>
+                <input type="text" id="tags" name="tags"
+                    class="w-full px-4 py-3 bg-gray-700 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-400"
+                    placeholder="e.g., #AI, #Python, #RecruitmentTips">
+                <small class="block mt-1 text-sm text-gray-500">
+                    Use hashtags to make your post more discoverable.
+                </small>
+            </div>
+
+            <!-- Submission Button -->
+            <button type="submit"
+                class="w-full py-3 bg-gradient-to-r from-purple-400 to-teal-400 text-gray-900 font-bold rounded-lg hover:from-purple-300 hover:to-teal-300 transition duration-200">
+                Publish Post
+            </button>
+        </form>
+        <!-- Back to Dashboard Link -->
+        <div class="mt-6 text-center">
+            <a href="/dashboard" class="text-purple-400 hover:text-teal-400 font-semibold transition duration-200">
+                ← Back to Dashboard
+            </a>
+        </div>
+    </div>
+</body>
+</html>
+
